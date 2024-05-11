@@ -2,6 +2,7 @@
 
 ## Update under process  
 ## Structure and integration 
-## 1-2 more iterations
+## 1-2 more iterations Pending
 
-### 10th May: Worked on conversational aspect and UI and will integrate complete model on 11th.
+### Noticed the mail today only, so my progress is as follows:
+May 10th: Focused on refining the conversational aspect and UI. Plan to integrate the complete model on May 11th.

@@ -1,3 +1,5 @@
 # SEC_Analytics
 
-## update under process  
+## Update under process  
+## Structure and integration 
+## 1-2 more iterations

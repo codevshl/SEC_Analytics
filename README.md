@@ -14,7 +14,7 @@ May 11
         
     * [X] `Conversational Chatbot Model 1 LLM`
     * [X] `Streamlit UI`
-    * [X] `Basic Refactoring, code structring of some files`
+    * [X] `Basic Refactoring, code structuring of some files`
      * [X]  `Image of intial project working in Local`
 
 ## In Progress

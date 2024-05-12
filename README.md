@@ -1,11 +1,11 @@
 # SEC_Analytics
 
-## Update under process  
-## Structure and integration 
-## 1-2 more iterations Pending
 
 ### Noticed the mail today only, so my progress is as follows:
-May 10th: Focused on refining the conversational aspect and UI. Plan to integrate the complete model on May 11th.
+```
+May 11
+
+```
 
 ## Completed
 
@@ -15,7 +15,7 @@ May 10th: Focused on refining the conversational aspect and UI. Plan to integrat
     * [X] `Conversational Chatbot Model 1 LLM`
     * [X] `Streamlit UI`
     * [X] `Basic Refactoring, code structring of some files`
-     * [X]  `Image of intial project woking in Local`
+     * [X]  `Image of intial project working in Local`
 
 ## In Progress
 
@@ -30,5 +30,6 @@ May 10th: Focused on refining the conversational aspect and UI. Plan to integrat
 
 *[ ] Task 2
 
-```
+
  ![Conversational ChatBot's image](images/image-1.png)
+

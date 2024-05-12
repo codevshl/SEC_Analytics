@@ -12,7 +12,6 @@ from langchain_community.vectorstores import FAISS
 import fitz 
 import streamlit as st
 import base64
-from io import BytesIO
 import sys
 from sec_download import download_10k_filings
 

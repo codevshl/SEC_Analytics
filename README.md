@@ -28,8 +28,8 @@ May 11
   * [ ] `Testing and Finishing touches`
   * [ ] `Integration of Mutliple LLM Models`
 
-*[ ] Task 2
+* [ ] Task 2
 
-
+## Conversational ChatBot's image
  ![Conversational ChatBot's image](images/image-1.png)
 

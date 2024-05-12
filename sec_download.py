@@ -1,5 +1,7 @@
 import os
 import re
+import subprocess
+import platform
 import pdfkit
 from sec_edgar_downloader import Downloader
 from bs4 import BeautifulSoup
@@ -61,9 +63,22 @@ def convert_html_to_pdf(source_html, output_pdf):
     Raises:
         Exception: If the HTML to PDF conversion fails.
     """
-    # Configure pdfkit
-    path_wkhtmltopdf = r'C:\Program Files\wkhtmltopdf\bin\wkhtmltopdf.exe'  # Adjust this as needed
-    config = configure_pdfkit(path_wkhtmltopdf)
+    
+    if platform.system() == 'Windows':
+        # On Windows, specify the path to wkhtmltopdf executable directly
+        pdfkit_config = pdfkit.configuration(
+            wkhtmltopdf=os.environ.get('WKHTMLTOPDF_PATH', r'C:\Program Files\wkhtmltopdf\bin\wkhtmltopdf.exe')
+        )
+    else:
+        # On non-Windows, use 'which' to find the path to wkhtmltopdf
+        wkhtmltopdf_path = subprocess.Popen(
+            ['which', os.environ.get('WKHTMLTOPDF_PATH', '/usr/local/bin/wkhtmltopdf')],
+            stdout=subprocess.PIPE
+        ).communicate()[0].strip().decode('utf-8')
+        # pdfkit_config = pdfkit.configuration(wkhtmltopdf=wkhtmltopdf_path)
+    
+    # path_wkhtmltopdf = r'C:\Program Files\wkhtmltopdf\bin\wkhtmltopdf.exe'  # Adjust this as needed
+    config = configure_pdfkit(wkhtmltopdf_path)
 
     try:
         pdfkit.from_file(source_html, output_pdf, configuration=config)

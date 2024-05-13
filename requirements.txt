@@ -9,4 +9,4 @@ langchain-community
 PyMuPDF
 faiss-cpu
 google-generativeai
-wkhtmltopdf
+git+https://github.com/wkhtmltopdf/wkhtmltopdf.git

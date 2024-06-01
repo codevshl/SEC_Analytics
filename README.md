@@ -1,9 +1,6 @@
 # SEC_Analytics
 
-
-### Noticed the mail today only, so my progress is as follows:
-```
-May 11
+## Ongoing Project
 
 ```
 
